@@ -1,0 +1,654 @@
+PositionAttitudeTransform {
+  nodeMask 0xffffffff
+  cullingActive TRUE
+  description "robot"
+  referenceFrame RELATIVE
+  position 0 0 0
+  attitude 0 0 0 1
+  scale 1 1 1
+  pivotPoint 0 0 0
+  num_children 10
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    num_drawables 1
+    ShapeDrawable {
+      Capsule {
+        Center 0 0 0
+        Radius 0.3
+        Height 0.15
+        Rotation 0 0 0 1
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      color 1 0 1 1
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position 0 0.25 -0.7
+    attitude 0 0 0 1
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.abdomen"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 1
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Sphere {
+            Center 0 0 0
+            Radius 0.4
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position 0.2 0 0.2
+    attitude -0.353553 0.353553 0.146447 0.853553
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.arm1"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 2
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Cylinder {
+            Center 0 0 0.5
+            Radius 0.075
+            Height 1
+            Rotation 0 0 0 1
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+      PositionAttitudeTransform {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        referenceFrame RELATIVE
+        position 0 0 1
+        attitude 0.83147 0 0 0.55557
+        scale 1 1 1
+        pivotPoint 0 0 0
+        num_children 1
+        PositionAttitudeTransform {
+          nodeMask 0xffffffff
+          cullingActive TRUE
+          description "robot.arm1.lowerArm"
+          referenceFrame RELATIVE
+          position 0 0 0
+          attitude 0 0 0 1
+          scale 1 1 1
+          pivotPoint 0 0 0
+          num_children 1
+          Geode {
+            nodeMask 0xffffffff
+            cullingActive TRUE
+            num_drawables 1
+            ShapeDrawable {
+              Capsule {
+                Center 0 0 0.5
+                Radius 0.075
+                Height 1
+                Rotation 0 0 0 1
+              }
+              useDisplayList TRUE
+              useVertexBufferObjects FALSE
+              color 0 0 1 1
+            }
+          }
+        }
+      }
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position 0.2 0 0.06
+    attitude -0.31819 0.51328 0.212608 0.768178
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.arm2"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 2
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Cylinder {
+            Center 0 0 0.5
+            Radius 0.075
+            Height 1
+            Rotation 0 0 0 1
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+      PositionAttitudeTransform {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        referenceFrame RELATIVE
+        position 0 0 1
+        attitude 0.83147 0 0 0.55557
+        scale 1 1 1
+        pivotPoint 0 0 0
+        num_children 1
+        PositionAttitudeTransform {
+          nodeMask 0xffffffff
+          cullingActive TRUE
+          description "robot.arm2.lowerArm"
+          referenceFrame RELATIVE
+          position 0 0 0
+          attitude 0 0 0 1
+          scale 1 1 1
+          pivotPoint 0 0 0
+          num_children 1
+          Geode {
+            nodeMask 0xffffffff
+            cullingActive TRUE
+            num_drawables 1
+            ShapeDrawable {
+              Capsule {
+                Center 0 0 0.5
+                Radius 0.075
+                Height 1
+                Rotation 0 0 0 1
+              }
+              useDisplayList TRUE
+              useVertexBufferObjects FALSE
+              color 0 0 1 1
+            }
+          }
+        }
+      }
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position 0.2 0 -0.06
+    attitude -0.212608 0.768178 0.31819 0.51328
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.arm3"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 2
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Cylinder {
+            Center 0 0 0.5
+            Radius 0.075
+            Height 1
+            Rotation 0 0 0 1
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+      PositionAttitudeTransform {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        referenceFrame RELATIVE
+        position 0 0 1
+        attitude 0.83147 0 0 0.55557
+        scale 1 1 1
+        pivotPoint 0 0 0
+        num_children 1
+        PositionAttitudeTransform {
+          nodeMask 0xffffffff
+          cullingActive TRUE
+          description "robot.arm3.lowerArm"
+          referenceFrame RELATIVE
+          position 0 0 0
+          attitude 0 0 0 1
+          scale 1 1 1
+          pivotPoint 0 0 0
+          num_children 1
+          Geode {
+            nodeMask 0xffffffff
+            cullingActive TRUE
+            num_drawables 1
+            ShapeDrawable {
+              Capsule {
+                Center 0 0 0.5
+                Radius 0.075
+                Height 1
+                Rotation 0 0 0 1
+              }
+              useDisplayList TRUE
+              useVertexBufferObjects FALSE
+              color 0 0 1 1
+            }
+          }
+        }
+      }
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position 0.2 0 -0.2
+    attitude -0.146447 0.853553 0.353553 0.353553
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.arm4"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 2
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Cylinder {
+            Center 0 0 0.5
+            Radius 0.075
+            Height 1
+            Rotation 0 0 0 1
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+      PositionAttitudeTransform {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        referenceFrame RELATIVE
+        position 0 0 1
+        attitude 0.83147 0 0 0.55557
+        scale 1 1 1
+        pivotPoint 0 0 0
+        num_children 1
+        PositionAttitudeTransform {
+          nodeMask 0xffffffff
+          cullingActive TRUE
+          description "robot.arm4.lowerArm"
+          referenceFrame RELATIVE
+          position 0 0 0
+          attitude 0 0 0 1
+          scale 1 1 1
+          pivotPoint 0 0 0
+          num_children 1
+          Geode {
+            nodeMask 0xffffffff
+            cullingActive TRUE
+            num_drawables 1
+            ShapeDrawable {
+              Capsule {
+                Center 0 0 0.5
+                Radius 0.075
+                Height 1
+                Rotation 0 0 0 1
+              }
+              useDisplayList TRUE
+              useVertexBufferObjects FALSE
+              color 0 0 1 1
+            }
+          }
+        }
+      }
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position -0.2 0 -0.2
+    attitude -0.146447 -0.853553 -0.353553 0.353553
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.arm5"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 2
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Cylinder {
+            Center 0 0 0.5
+            Radius 0.075
+            Height 1
+            Rotation 0 0 0 1
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+      PositionAttitudeTransform {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        referenceFrame RELATIVE
+        position 0 0 1
+        attitude 0.83147 0 0 0.55557
+        scale 1 1 1
+        pivotPoint 0 0 0
+        num_children 1
+        PositionAttitudeTransform {
+          nodeMask 0xffffffff
+          cullingActive TRUE
+          description "robot.arm5.lowerArm"
+          referenceFrame RELATIVE
+          position 0 0 0
+          attitude 0 0 0 1
+          scale 1 1 1
+          pivotPoint 0 0 0
+          num_children 1
+          Geode {
+            nodeMask 0xffffffff
+            cullingActive TRUE
+            num_drawables 1
+            ShapeDrawable {
+              Capsule {
+                Center 0 0 0.5
+                Radius 0.075
+                Height 1
+                Rotation 0 0 0 1
+              }
+              useDisplayList TRUE
+              useVertexBufferObjects FALSE
+              color 0 0 1 1
+            }
+          }
+        }
+      }
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position -0.2 0 -0.06
+    attitude -0.212608 -0.768178 -0.31819 0.51328
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.arm6"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 2
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Cylinder {
+            Center 0 0 0.5
+            Radius 0.075
+            Height 1
+            Rotation 0 0 0 1
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+      PositionAttitudeTransform {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        referenceFrame RELATIVE
+        position 0 0 1
+        attitude 0.83147 0 0 0.55557
+        scale 1 1 1
+        pivotPoint 0 0 0
+        num_children 1
+        PositionAttitudeTransform {
+          nodeMask 0xffffffff
+          cullingActive TRUE
+          description "robot.arm6.lowerArm"
+          referenceFrame RELATIVE
+          position 0 0 0
+          attitude 0 0 0 1
+          scale 1 1 1
+          pivotPoint 0 0 0
+          num_children 1
+          Geode {
+            nodeMask 0xffffffff
+            cullingActive TRUE
+            num_drawables 1
+            ShapeDrawable {
+              Capsule {
+                Center 0 0 0.5
+                Radius 0.075
+                Height 1
+                Rotation 0 0 0 1
+              }
+              useDisplayList TRUE
+              useVertexBufferObjects FALSE
+              color 0 0 1 1
+            }
+          }
+        }
+      }
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position -0.2 0 0.06
+    attitude -0.31819 -0.51328 -0.212608 0.768178
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.arm7"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 2
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Cylinder {
+            Center 0 0 0.5
+            Radius 0.075
+            Height 1
+            Rotation 0 0 0 1
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+      PositionAttitudeTransform {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        referenceFrame RELATIVE
+        position 0 0 1
+        attitude 0.83147 0 0 0.55557
+        scale 1 1 1
+        pivotPoint 0 0 0
+        num_children 1
+        PositionAttitudeTransform {
+          nodeMask 0xffffffff
+          cullingActive TRUE
+          description "robot.arm7.lowerArm"
+          referenceFrame RELATIVE
+          position 0 0 0
+          attitude 0 0 0 1
+          scale 1 1 1
+          pivotPoint 0 0 0
+          num_children 1
+          Geode {
+            nodeMask 0xffffffff
+            cullingActive TRUE
+            num_drawables 1
+            ShapeDrawable {
+              Capsule {
+                Center 0 0 0.5
+                Radius 0.075
+                Height 1
+                Rotation 0 0 0 1
+              }
+              useDisplayList TRUE
+              useVertexBufferObjects FALSE
+              color 0 0 1 1
+            }
+          }
+        }
+      }
+    }
+  }
+  PositionAttitudeTransform {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    referenceFrame RELATIVE
+    position -0.2 0 0.2
+    attitude -0.353553 -0.353553 -0.146447 0.853553
+    scale 1 1 1
+    pivotPoint 0 0 0
+    num_children 1
+    PositionAttitudeTransform {
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      description "robot.arm8"
+      referenceFrame RELATIVE
+      position 0 0 0
+      attitude 0 0 0 1
+      scale 1 1 1
+      pivotPoint 0 0 0
+      num_children 2
+      Geode {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        num_drawables 1
+        ShapeDrawable {
+          Cylinder {
+            Center 0 0 0.5
+            Radius 0.075
+            Height 1
+            Rotation 0 0 0 1
+          }
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          color 1 0 0 1
+        }
+      }
+      PositionAttitudeTransform {
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        referenceFrame RELATIVE
+        position 0 0 1
+        attitude 0.83147 0 0 0.55557
+        scale 1 1 1
+        pivotPoint 0 0 0
+        num_children 1
+        PositionAttitudeTransform {
+          nodeMask 0xffffffff
+          cullingActive TRUE
+          description "robot.arm8.lowerArm"
+          referenceFrame RELATIVE
+          position 0 0 0
+          attitude 0 0 0 1
+          scale 1 1 1
+          pivotPoint 0 0 0
+          num_children 1
+          Geode {
+            nodeMask 0xffffffff
+            cullingActive TRUE
+            num_drawables 1
+            ShapeDrawable {
+              Capsule {
+                Center 0 0 0.5
+                Radius 0.075
+                Height 1
+                Rotation 0 0 0 1
+              }
+              useDisplayList TRUE
+              useVertexBufferObjects FALSE
+              color 0 0 1 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
